@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save Profile</title>
+    <style>
+        /* Styling untuk navbar */
+        .navbar {
+            background-color: #0f233a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 35px;
+        }
+
+        /* Styling untuk bagian kiri (logo) */
+        .navbar-left {
+            flex: 1;
+        }
+
+        /* Styling untuk bagian tengah (judul) */
+        .navbar-center {
+            flex: 2;
+            text-align: center;
+        }
+
+        .navbar-center h1 {
+            color: rgb(58, 58, 255);
+            font-size: 1.5em;
+            margin: 0;
+            transition: transform 0.2s ease-in-out;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-center h1:hover {
+            transform: scale(1.1);
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Styling untuk bagian kanan (tombol login) */
+        .navbar-right {
+            flex: 1;
+            text-align: right;
+        }
+
+        /* Styling untuk tombol login */
+        .login-button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1em;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-button:hover {
+            background-color: #555;
+        }
+
+        /* Styling untuk gambar di navbar */
+        .navbar-icon {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .navbar-icon:hover {
+            transform: scale(1.1);
+        }
+
+        /* Additional styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <!-- Logo Profile di sebelah kiri -->
+        <div class="navbar-left">
+            <a href="profile.html"><img src="Profile.png" alt="Profile" class="navbar-icon"></a>
+        </div>
+
+        <!-- Judul di tengah -->
+        <div class="navbar-center">
+            <h1><a href="index.html" style="color: white; text-decoration: none;">Homepage</a></h1>
+        </div>
+
+        <!-- Tombol "Login" di sebelah kanan -->
+        <div class="navbar-right">
+            <a href="login.html" class="login-button">Login</a>
+        </div>
+    </div>
+
+    <!-- Content for Save Profile -->
+    <div class="container">
+        <h1>Profile Saved Successfully!</h1>
+        <p>Your profile information has been saved.</p>
+        <a href="profile.html" class="login-button">Go Back to Profile</a>
+    </div>
+</body>
+</html>
